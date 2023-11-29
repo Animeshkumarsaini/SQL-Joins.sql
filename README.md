@@ -1,4 +1,4 @@
-![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/9c21f16a-5efd-4aba-97da-ee96c60e1984)# SQL-Joins.sql
+# SQL-Joins.sql
 # What is Joins in SQL ?
 -- A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
 # Different Types of SQL JOINs
