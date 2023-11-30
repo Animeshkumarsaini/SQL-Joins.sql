@@ -11,14 +11,14 @@
 # Table 1 (Emp) :<br/>
 -- create table Emp (Emp_Id int, Ename varchar (100), City varchar (100), salary int, Dept varchar(50), MgrID int)<br/>
 # inserting data into the table:<br/>
---Insert into Emp values(101,'Tom','Delhi',12000,'HR',11)<br/>
---Insert into Emp values(103,'John','Delhi',12000,'IT',11)<br/>
---Insert into Emp values(106,'Mike','Mumbai',15000,'Admin',12)<br/>
---Insert into Emp values(109,'Urmila','Jaipur',14000,'Ops',13)<br/>
---Insert into Emp values(111,'Urmila','Noida',12500,'Ops',15)<br/>
---Insert into Emp values(112,'Smith','Indore',16000,'IT',18)<br/>
---Insert into Emp values(125,'Tom','Pune',8000,'HR',17)<br/>
---Insert into Emp values(130,'Mike','Mumbai',7500,'Account',12)<br/>
+Insert into Emp values(101,'Tom','Delhi',12000,'HR',11) <br/>
+Insert into Emp values(103,'John','Delhi',12000,'IT',11) <br/>
+Insert into Emp values(106,'Mike','Mumbai',15000,'Admin',12) <br/>
+Insert into Emp values(109,'Urmila','Jaipur',14000,'Ops',13) <br/>
+Insert into Emp values(111,'Urmila','Noida',12500,'Ops',15) <br/>
+Insert into Emp values(112,'Smith','Indore',16000,'IT',18) <br/>
+Insert into Emp values(125,'Tom','Pune',8000,'HR',17) <br/>
+Insert into Emp values(130,'Mike','Mumbai',7500,'Account',12) <br/>
 
 # Table view with "Select command"<br/>
 --Select * from Emp<br/>
