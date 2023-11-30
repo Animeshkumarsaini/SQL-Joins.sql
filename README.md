@@ -44,6 +44,8 @@ Insert into Mgr values(15,'Rahul',0)<br/>
 
 # INNER JOIN: <br/>
 --Returns records that have matching values in both tables.<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/69426aa1-2d85-4ea5-b8bb-108845628854)
+
 # Syntax<br/>
 SELECT columns (enter as many required)    <br/>
 FROM table1    <br/>
@@ -51,7 +53,7 @@ INNER JOIN table2 <br/>
 ON <br/>
 condition <br/>
 
-# Code <br/>
+# puting inner join on table 1 (Emp) & table 2 (Mgr)
 > table 1 -- Select * from Emp<br/>
 > table 2 -- select * from Mgr<br/>
 > # code <br/>
