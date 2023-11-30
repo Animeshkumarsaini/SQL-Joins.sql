@@ -1,11 +1,11 @@
 # SQL-Joins
 # What is Joins in SQL ?
--- A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+-- A JOIN clause is used to combine rows from two or more tables, based on a related column between them.<br />
 # Different Types of SQL JOINs
--- (INNER) JOIN: Returns records that have matching values in both tables
--- LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
--- RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
--- FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+-- (INNER) JOIN: Returns records that have matching values in both tables<br />
+-- LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table.<br />
+-- RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table. <br />
+-- FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table. <br />
 
 # Table Creating for data:
 # Table 1 (Emp) :
