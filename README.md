@@ -74,7 +74,7 @@ SELECT column_name(s)...<br/> from table1<br/>
 LEFT JOIN table2<br/>
 ON table1.column_name = table2.column_name;<br/>
 
-## Inner Join on table 1 (Emp) & table 2 (Mgr)
+# Left Join on table 1 (Emp) & table 2 (Mgr)
 > # table 1 -- Select * from Emp<br/>
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/487027f1-7e33-432d-b98f-10017c185332)
 
@@ -87,13 +87,39 @@ Left join Mgr ( table 2: Mgr)<br/>
 on<br/>
 MgrID = Mgr_Id  ( condition)<br/>
 
-# Left Join Resut
+# Left Join Result :
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/6c96de9e-4aaf-4649-a492-8cd02e21859f)
 
 -# Result:
 -  Return all records from the left table with matched records from the right table and null values for any rows which cannot be matched, as such it's my understanding that it should be impossible to return more rows than exist in the left table, but it's happening all the same!
 
+# RIGHT JOIN :
+The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1).<br/> The result is 0 records from the left side, if there is no match.
+# Note: In some databases LEFT JOIN is called "Right OUTER JOIN".<br/>
 
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/2a88f605-8101-45fb-b60f-f33e2040db49)
+# Syntax:
+SELECT column_name(s) from table1<br/>
+RIGHT JOIN table2<br/>
+ON <br/>
+table1.column_name = table2.column_name;<br/>
+
+# Right Join on table 1 (Emp) & table 2 (Mgr)
+> # table 1 -- Select * from Emp<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/487027f1-7e33-432d-b98f-10017c185332)
+
+># table 2 -- select * from Mgr<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/825e7861-a2bd-4333-b4d2-260a66b9b361)
+
+> # Code <br/>
+Select Emp_Id,Ename, salary,Manager, city, Dept from Emp ( table 1: emp)<br/>
+Right join Mgr ( table 2: Mgr)<br/>
+on<br/>
+MgrID = Mgr_Id  ( condition)<br/>
+# Right Join Result :
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/6c7e1093-d00b-4f10-a0d9-f6d840fccc01)
+
+-  Return all records from the right table with matched records from the left table and null values for any rows which cannot be matched, as such it's my understanding that it should be impossible to return more rows than exist in the left table, but it's happening all the same!
 
 
  
