@@ -1,13 +1,15 @@
 # SQL-Joins
 # What is Joins in SQL ?
 -- A JOIN clause is used to combine rows from two or more tables, based on a related column between them.<br/>
-# Different Types of SQL JOINs
+# Types of SQL JOINs
 -- (INNER) JOIN: Returns records that have matching values in both tables.<br/>
 -- LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table.<br/>
 -- RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table. <br/>
 -- FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table. <br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/2741cde4-21f1-4cd9-8c8d-93d92e8bf36f)
 
-# Table Creating for data:<br/>
+
+# Creating tables for Joins:<br/>
 # Table 1 (Emp) :<br/>
 -- create table Emp (Emp_Id int, Ename varchar (100), City varchar (100), salary int, Dept varchar(50), MgrID int)<br/>
 # inserting data into the table:<br/>
@@ -119,8 +121,58 @@ MgrID = Mgr_Id  ( condition)<br/>
 # Right Join Result :
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/6c7e1093-d00b-4f10-a0d9-f6d840fccc01)
 
+# -Result:
 -  Return all records from the right table with matched records from the left table and null values for any rows which cannot be matched, as such it's my understanding that it should be impossible to return more rows than exist in the left table, but it's happening all the same!
+-  
+## FULL JOIN: 
+The FULL JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+# Note: In some databases Full JOIN is called "Right OUTER JOIN".<br/>
 
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/939d5285-ff3d-4029-90f5-cffe6aa80531)
 
+# Syntax:
+SELECT column_name(s) from table1<br/>
+Full JOIN table2<br/>
+ON <br/>
+table1.column_name = table2.column_name;<br/>
+
+# Full Join on table 1 (Emp) & table 2 (Mgr) :
+> # table 1 -- Select * from Emp<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/487027f1-7e33-432d-b98f-10017c185332)
+
+># table 2 -- select * from Mgr<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/825e7861-a2bd-4333-b4d2-260a66b9b361)
+
+> # Code <br/>
+Select Emp_Id,Ename, salary,Manager, city, Dept from Emp ( table 1: emp)<br/>
+full join Mgr ( table 2: Mgr)<br/>
+on <br/>
+MgrID = Mgr_Id  ( condition) <br/>
+
+# Full Join Result :
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/9bebf270-eb80-48af-95a9-de55142d3e9e)
+
+The FULL OUTER JOIN keyword returns all matching records from both tables whether the other table matches or not. So, if there are rows in "table 1" that do not have matches in "table 2", or if there are rows in "table 2" that do not have matches in "table 1", those rows will be listed as well. <br/>
  
+# Self Join : <br/>
+A self join is a regular join, but the table is joined with itself.<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/1a70642c-fd11-49c3-b3b5-4234e23f9484)
 
+# Syntax:<br/>
+SELECT column_name(s)<br/>
+FROM table1 T1, table2 T2<br/>
+WHERE condition;<br/>
+> # table 1 -- Select * from Emp<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/487027f1-7e33-432d-b98f-10017c185332)
+
+># table 2 -- select * from Mgr<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/825e7861-a2bd-4333-b4d2-260a66b9b361)
+
+> # Code <br/>
+Select Emp_Id,Ename,City,salary,Dept,MgrID,Manager,Gend_Id  from Emp t1, Mgr t2<br/>
+where salary between 7500 and 12000<br/>
+
+# Result :<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/1537801b-aadd-4e52-a4fe-396382afa036)
+
+As its name implies, is used to join a table to itself.<br/> This means that each row in a table is joined to itself and every other row in that table. <br/> However, referencing the same table more than once within a single query will result in an error.
