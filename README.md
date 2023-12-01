@@ -56,7 +56,7 @@ condition <br/>
 # Inner Join on table 1 (Emp) & table 2 (Mgr)
 > table 1 -- Select * from Emp<br/>
 > table 2 -- select * from Mgr<br/>
-> # code <br/>
+> # Code <br/>
 Select Emp_Id,Ename, salary,Manager, city, Dept from Emp ( table 1: emp)<br/>
 Inner join Mgr ( table 2: Mgr)<br/>
 on<br/>
@@ -81,7 +81,7 @@ ON table1.column_name = table2.column_name;<br/>
 ># table 2 -- select * from Mgr<br/>
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/825e7861-a2bd-4333-b4d2-260a66b9b361)
 
-> # code <br/>
+> # Code <br/>
 Select Emp_Id,Ename, salary,Manager, city, Dept from Emp ( table 1: emp)<br/>
 Left join Mgr ( table 2: Mgr)<br/>
 on<br/>
@@ -90,8 +90,8 @@ MgrID = Mgr_Id  ( condition)<br/>
 # Left Join Resut
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/6c96de9e-4aaf-4649-a492-8cd02e21859f)
 
-
-
+-# Result:
+-  return all records from the left table with matched records from the right table and null values for any rows which cannot be matched, as such it's my understanding that it should be impossible to return more rows than exist in the left table, but it's happening all the same!
 
 
 
