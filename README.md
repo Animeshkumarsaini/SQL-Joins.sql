@@ -53,7 +53,7 @@ INNER JOIN table2 <br/>
 ON <br/>
 condition <br/>
 
-# puting inner join on table 1 (Emp) & table 2 (Mgr)
+# Inner Join on table 1 (Emp) & table 2 (Mgr)
 > table 1 -- Select * from Emp<br/>
 > table 2 -- select * from Mgr<br/>
 > # code <br/>
@@ -62,6 +62,36 @@ Inner join Mgr ( table 2: Mgr)<br/>
 on<br/>
 MgrID = Mgr_Id  ( condition)<br/>
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/c4728c9c-c93f-44b0-b6be-9bb841d46dbb)
+
+# Left Join: <br/>
+The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2).<br/> The result is 0 records from the right side, if there is no match.<br/>
+
+# Note: In some databases LEFT JOIN is called "LEFT OUTER JOIN".<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/8dba9a42-2279-408d-828d-0c8f467cbf94)
+
+# Syntax: 
+SELECT column_name(s)...<br/> from table1<br/>
+LEFT JOIN table2<br/>
+ON table1.column_name = table2.column_name;<br/>
+
+## Inner Join on table 1 (Emp) & table 2 (Mgr)
+> # table 1 -- Select * from Emp<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/487027f1-7e33-432d-b98f-10017c185332)
+
+># table 2 -- select * from Mgr<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/825e7861-a2bd-4333-b4d2-260a66b9b361)
+
+> # code <br/>
+Select Emp_Id,Ename, salary,Manager, city, Dept from Emp ( table 1: emp)<br/>
+Left join Mgr ( table 2: Mgr)<br/>
+on<br/>
+MgrID = Mgr_Id  ( condition)<br/>
+
+# Left Join Resut
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/6c96de9e-4aaf-4649-a492-8cd02e21859f)
+
+
+
 
 
 
