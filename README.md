@@ -176,3 +176,39 @@ where salary between 7500 and 12000<br/>
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/1537801b-aadd-4e52-a4fe-396382afa036)
 
 As its name implies, is used to join a table to itself.<br/> This means that each row in a table is joined to itself and every other row in that table. <br/> However, referencing the same table more than once within a single query will result in an error.
+
+# Using of multiple Joins : <br/>
+-Multiple join is a query that contains the same or different join types, which are used more than once.<br/> Thus, we gain the ability to combine multiple tables of data in order to overcome relational database issues.
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/5e01d45b-b510-4421-a146-fd1e8c5dd954)
+> # table 1 -- Select * from Emp<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/487027f1-7e33-432d-b98f-10017c185332)
+
+># table 2 -- select * from Mgr<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/825e7861-a2bd-4333-b4d2-260a66b9b361)
+># table 3 -- select * from GenderTbl <br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/2ee5697e-9af0-49b5-8ca7-30cc8f1b2ecf)
+# Syntax:<br/> Example 1: 
+SELECT columns <br/>   
+FROM table1 <br/>   
+Right JOIN table2 ON condition1 <br/>   
+Left JOIN table3 ON condition2 <br/>'
+# Example 2: 
+SELECT columns <br/>   
+FROM table1 <br/>   
+Inner JOIN table2 ON condition1 <br/>   
+Inner JOIN table3 ON condition2 <br/> ......
+> # Code <br/>
+Select Emp_Id,Ename,City,salary,Dept,MgrID from Emp <br/>
+right join Mgr <br/>
+on emp.MgrID = Mgr.Mgr_Id <br/>
+left join GenderTbl <br/> 
+on Mgr.Gend_Id = GenderTbl.G_Id <br/>
+
+# Result :<br/>
+![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/3a347a88-306a-41c5-99d2-163ea2ce01e2).
+
+# NOTE:
+When you need to join multiple tables, you have INNER & LEFT JOIN on your disposal (RIGHT JOIN is rarely used and can be easily replaced by LEFT JOIN). <br/> Which join you’ll use depends directly on the task you need to solve and you’ll get the feeling along the way. 
+
+
+
