@@ -91,7 +91,7 @@ MgrID = Mgr_Id  ( condition)<br/>
 ![image](https://github.com/Animeshkumarsaini/SQL-Joins.sql/assets/143740775/6c96de9e-4aaf-4649-a492-8cd02e21859f)
 
 -# Result:
--  return all records from the left table with matched records from the right table and null values for any rows which cannot be matched, as such it's my understanding that it should be impossible to return more rows than exist in the left table, but it's happening all the same!
+-  Return all records from the left table with matched records from the right table and null values for any rows which cannot be matched, as such it's my understanding that it should be impossible to return more rows than exist in the left table, but it's happening all the same!
 
 
 
